@@ -1,0 +1,76 @@
+.weather {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  color: #fff;
+  background-color: #333;
+  margin: 20px auto 0 auto;
+  padding: 0 1rem 1rem 1rem;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    .info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.4rem 0;
+      padding: 0.4rem;
+      .city {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1;
+        margin: 0;
+      }
+    }
+    .icon {
+      width: 100px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .temperature {
+      display: flex;
+      gap: 3px;
+      font-weight: 600;
+      font-size: 70px;
+      width: auto;
+      letter-spacing: -5px;
+      margin: 10px 0;
+      margin-right: 5px;
+      sup {
+        font-size: 50px;
+      }
+    }
+    .details {
+      width: 100%;
+      padding-left: 20px;
+      .parameter {
+        display: flex;
+        justify-content: space-between;
+        .label {
+          text-align: left;
+          font-weight: 400;
+          font-size: 12px;
+        }
+        .value {
+          text-align: right;
+          font-weight: 600;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
